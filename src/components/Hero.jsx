@@ -41,7 +41,7 @@ const Hero = () => {
                         </MagneticButton>
                         <MagneticButton>
                             <a
-                                href="/resume.pdf"
+                                href={`${import.meta.env.BASE_URL}resume.pdf`}
                                 download="Swaroop_Resume.pdf"
                                 className="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto"
                             >

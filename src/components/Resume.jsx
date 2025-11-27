@@ -39,7 +39,7 @@ const Resume = () => {
                             <div className="mt-8 pt-8 border-t border-slate-800">
                                 <MagneticButton className="w-full">
                                     <a
-                                        href="/resume.pdf"
+                                        href={`${import.meta.env.BASE_URL}resume.pdf`}
                                         download="Swaroop_Resume.pdf"
                                         className="w-full py-3 bg-accent hover:bg-accent-hover text-white font-bold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20"
                                     >
@@ -56,7 +56,7 @@ const Resume = () => {
                             <p>Loading Resume...</p>
                         </div>
                         <img
-                            src="/resume.png"
+                            src={`${import.meta.env.BASE_URL}resume.png`}
                             alt="Resume"
                             className="w-full h-auto relative z-10"
                         />
@@ -65,7 +65,7 @@ const Resume = () => {
                         <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/50 transition-all duration-300 flex items-center justify-center z-20 opacity-0 group-hover:opacity-100">
                             <MagneticButton>
                                 <a
-                                    href="/resume.pdf"
+                                    href={`${import.meta.env.BASE_URL}resume.pdf`}
                                     download="Swaroop_Resume.pdf"
                                     className="px-8 py-3 bg-accent text-white font-bold rounded-lg shadow-lg transform scale-105"
                                 >
